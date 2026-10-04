@@ -126,13 +126,13 @@
     .section-label {
       margin: 0;
       color: var(--green);
-      font-size: .78rem;
+      font-size: .92rem;
       font-weight: 650;
-      letter-spacing: .12em;
+      letter-spacing: .1em;
       text-transform: uppercase;
     }
-    .section-number { display: block; margin-bottom: 12px; color: var(--muted); font-family: var(--serif); font-size: 1rem; letter-spacing: 0; }
-    .section-title { max-width: 780px; margin: 0; font-family: var(--serif); font-size: clamp(2.1rem, 4vw, 3.65rem); font-weight: 500; letter-spacing: -.035em; line-height: 1.08; }
+    .section-number { display: block; margin-bottom: 12px; color: var(--muted); font-family: var(--serif); font-size: 1.22rem; letter-spacing: 0; }
+    .section-title { max-width: 780px; margin: 0; font-family: var(--serif); font-size: clamp(1.85rem, 3vw, 2.8rem); font-weight: 500; letter-spacing: -.025em; line-height: 1.12; }
     .section-intro { max-width: 750px; margin: 25px 0 0; color: var(--muted); font-size: 1.05rem; }
 
     .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 46px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -191,14 +191,11 @@
     .detail-list strong { display: block; font-family: var(--serif); font-size: 1.1rem; font-weight: 500; line-height: 1.35; }
     .detail-list span { display: block; margin-top: 5px; color: var(--muted); font-size: .84rem; }
 
-    .contact { padding: 104px 0 60px; background: var(--soft); }
-    .contact-grid { display: grid; grid-template-columns: 1.4fr .6fr; gap: 60px; align-items: end; }
-    .contact h2 { max-width: 800px; margin: 0; font-family: var(--serif); font-size: clamp(2.7rem, 6vw, 5.2rem); font-weight: 500; letter-spacing: -.045em; line-height: 1; }
-    .contact h2 a { color: var(--green-deep); text-decoration-thickness: 2px; text-underline-offset: 8px; }
-    .contact-aside { padding-bottom: 6px; }
-    .contact-aside p { margin: 0 0 16px; color: var(--muted); }
+    .contact { padding: 74px 0 62px; background: var(--soft); }
+    .closing { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: end; }
+    .closing h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.55rem, 4.5vw, 4.25rem); font-weight: 500; letter-spacing: -.04em; line-height: 1; }
+    .closing-detail p { margin: 0 0 18px; color: var(--muted); }
     .contact-links { display: flex; flex-wrap: wrap; gap: 11px 21px; }
-    .site-footer { margin-top: 88px; padding-top: 20px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 24px; color: var(--muted); font-size: .76rem; }
 
     @media (prefers-reduced-motion: no-preference) {
       .publication, .focus-item, .timeline-row { transition: background-color .2s ease, transform .2s ease; }
@@ -211,7 +208,7 @@
       .focus-item { min-height: 0; padding: 24px 0; }
       .focus-item + .focus-item { border-top: 1px solid var(--line); border-left: 0; padding-left: 0; }
       .focus-item h3 { margin-top: 13px; }
-      .contact-grid { grid-template-columns: 1fr; align-items: start; }
+      .closing { grid-template-columns: 1fr; align-items: start; }
     }
 
     @media (max-width: 760px) {
@@ -229,8 +226,7 @@
       .pub-action { grid-column: 2; justify-self: start; }
       .timeline-row { grid-template-columns: 82px minmax(0, 1fr); gap: 18px; }
       .split { grid-template-columns: 1fr; }
-      .contact { padding-top: 74px; }
-      .site-footer { margin-top: 60px; flex-direction: column; }
+      .contact { padding: 58px 0; }
     }
 
     @media (max-width: 420px) {
@@ -413,10 +409,10 @@
 
     <section class="contact" id="contact">
       <div class="shell">
-        <div class="contact-grid">
-          <h2>Interested in power-system stability? <a href="mailto:zwang471@jhu.edu">Let’s talk.</a></h2>
-          <div class="contact-aside">
-            <p>PhD student in Electrical and Computer Engineering at Johns Hopkins University.</p>
+        <div class="closing">
+          <h2>Zhimeng Wang</h2>
+          <div class="closing-detail">
+            <p>PhD Student in Electrical and Computer Engineering<br>Johns Hopkins University</p>
             <div class="contact-links">
               <a class="text-link" href="mailto:zwang471@jhu.edu">Email</a>
               <a class="text-link" href="https://scholar.google.com/citations?user=unFsF_YAAAAJ&amp;hl=en">Google Scholar</a>
@@ -424,10 +420,6 @@
             </div>
           </div>
         </div>
-        <footer class="site-footer">
-          <span>© 2026 Zhimeng Wang</span>
-          <span>Baltimore, Maryland</span>
-        </footer>
       </div>
     </section>
   </main>
