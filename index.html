@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Zhimeng Wang is a PhD student at Johns Hopkins University researching decentralized stability certificates for renewable-rich power grids.">
@@ -101,7 +100,7 @@
       text-transform: uppercase;
     }
     .hero h1 {
-      max-width: 700px;
+      max-width: 970px;
       margin: 0;
       font-family: var(--serif);
       font-size: clamp(3.4rem, 7.5vw, 6.5rem);
@@ -193,7 +192,7 @@
 
     .contact { padding: 74px 0 62px; background: var(--soft); }
     .closing { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: end; }
-    .closing h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.55rem, 3vw, 4.25rem); font-weight: 500; letter-spacing: -.04em; line-height: 1; }
+    .closing h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.55rem, 4.5vw, 4.25rem); font-weight: 500; letter-spacing: -.04em; line-height: 1; }
     .closing-detail p { margin: 0 0 18px; color: var(--muted); }
     .contact-links { display: flex; flex-wrap: wrap; gap: 11px 21px; }
 
@@ -218,7 +217,7 @@
       .nav-links a:not(.cv-link):not(:first-child) { display: none; }
       .hero { padding: 70px 0 58px; }
       .hero::after { right: -180px; bottom: -190px; }
-      .hero h1 { font-size: clamp(2rem, 10vw, 4rem); }
+      .hero h1 { font-size: clamp(3rem, 16vw, 4.5rem); }
       .hero-statement { font-size: 1.5rem; }
       .section { padding: 58px 0; }
       .section-layout { grid-template-columns: 1fr; gap: 30px; }
@@ -235,8 +234,33 @@
       .timeline-row { grid-template-columns: 1fr; gap: 8px; }
     }
   </style>
-</head>
+<style id="typography-adjustments">@media (min-width: 760.01px) {
+  .hero h1 { font-size: clamp(1.7rem, 3.75vw, 3.25rem); }
+}
+@media (max-width: 760px) {
+  .hero h1 { font-size: clamp(2.4rem, 12.8vw, 3.6rem); }
+}
+.hero-statement { font-size: clamp(1.14rem, 2.128vw, 1.748rem); }
+@media (max-width: 760px) {
+  .hero-statement { font-size: 1.14rem; }
+}
+.section-label { font-size: 1.472rem; }
+.section-number { font-size: 1.952rem; }
+.section-title { font-size: clamp(1.3135rem, 2.13vw, 1.988rem); }
+.subsection-title { font-size: 1.3135rem; }
+.publication h3 { font-size: clamp(1.092rem, 1.848vw, 1.47rem); }
+body { font-size: 16.16px; }
+.hero-detail { font-size: 1.0302rem; }
+.section-intro { font-size: 1.0605rem; }
+.focus-item p { font-size: 0.909rem; }
+.pub-authors, .pub-venue { font-size: 0.8686rem; }
+.pub-note { font-size: 0.8484rem; }
+.timeline-row p { font-size: 0.909rem; }
+.detail-list span { font-size: 0.8484rem; }
+.closing h2 { font-size: clamp(1.275rem, 2.25vw, 2.125rem); }</style></head>
 <body>
+  
+  
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="shell nav">
@@ -423,5 +447,6 @@
       </div>
     </section>
   </main>
-</body>
-</html>
+
+
+</body></html>
